@@ -1,11 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
+box-sizing: border-box;
 }
 
-nav{
-    background-color:steelblue;
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: steelblue;
     padding: 10px;
 }
 
@@ -15,7 +21,7 @@ nav a {
     padding: 10px;
 }
 
-h1{
+h1 {
     color: steelblue;
     padding: .5rem;
 }
@@ -26,60 +32,60 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px rgb(244, 243, 243);
-    float:right;
+    float: right;
     margin: 0 0 1rem 1rem;
 }
 
-main{
+main {
     max-width: 640px;
 }
 
-aside{
+aside {
     width: 20rem;
     margin: 1rem;
-    border:1px solid rgba(0, 0,0,0.2) ;
-    padding:1em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1em;
     background-color: #eee;
     color: #f0ebeb;
-    font-family:' Playwrite Nigeria Modern';
+    font-family: ' Playwrite Nigeria Modern';
     text-align: center;
 }
 
-aside img{
+aside img {
     width: 200px;
-    height:auto;
+    height: auto;
 }
 
-aside h2{
+aside h2 {
     position: absolute;
-    top:65px;
-    left:150px;
+    top: 65px;
+    left: 150px;
 }
 
 
-p{
-    padding:0;
+p {
+    padding: 0;
     margin: 1rem;
 }
 
-footer{
+footer {
     margin-top: 1em;
     border-top: 1px solid #000;
     text-align: center;
 }
 
-body{
+body {
     font-size: 16px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
 /* Class Selectors */
 .box {
     margin: 1rem;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
     padding: 2rem;
     background-color: hsl(0, 6%, 80%);
-    color: #198a78;
+    color: #bec3c2;
 }
 
 aside {
@@ -87,7 +93,19 @@ aside {
     position: relative;
 
 }
+aside img {
+    width: 100%;
+}
+aside h2 {
+    color: #033b93;
+    position: absolute;
+    top: 20px;
+    left: 3rem;
+}
+aside p {
+    color: #000;
+}
 
-.indent{
+.indent {
     margin-left: 2rem;
 }
