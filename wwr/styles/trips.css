@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+--primary-color: #141414; /* Dark grey */
+ --secondary-color: #BA5B4F; /* Reddish */
+ --accent1-color: #BA5B4F; /* Reddish */
+ --accent2-color: #1C6E8C; /* Dark aqua */
+ --accent3-color: #1C6E8C; /* Dark aqua */
+ --heading-font: 'Poppins', serif;
+--paragraph-font:'Playwrite Nigeria Modern', serif;
+--nav-background-color: #FEAD34;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns:1fr auto minmax(0, 1fr) ;
+    align-items: center; 
+    padding: 10px 20px;
+    background-color:  rgb(91, 146, 173);
+    margin-bottom:30px ;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-left: 50px;
+}
+
+nav {
+    display: flex;
+    justify-content:flex-end; 
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white; 
+}
+.trip-table {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}

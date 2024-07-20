@@ -9,17 +9,15 @@ body{
 }
 
 :root {
-    --primary-color:#141414 ;
-    --secondary-color: #FEAD34;
-    --accent1-color:#BA5B4F ;
-    --accent2-color: #1C6E8C;
-    --accent3-color: #548C2F;
+    --primary-color: #141414; /* Dark grey */
+    --secondary-color: #BA5B4F; /* Reddish */
+    --accent1-color: #BA5B4F; /* Reddish */
+    --accent2-color: #1C6E8C; /* Dark aqua */
+    --accent3-color: #1C6E8C; /* Dark aqua */
     --heading-font: 'Poppins', serif;
     --paragraph-font:'Playwrite Nigeria Modern', serif;
-    --nav-background-color:#FEAD34;
-    --nav-link-color: #141414 ;
-    --nav-hover-link-color:#141414 ;
-    --nav-hover-background-color:#FEAD34 ;}
+    --nav-background-color: #FEAD34;
+}
 
 body {
     font-family : var(--paragraph-font);
