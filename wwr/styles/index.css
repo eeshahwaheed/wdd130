@@ -130,22 +130,6 @@ nav a {
     background-color: var(--accent2-color);
 }
 
-footer{
-    background-color: rgb(91, 146, 173); 
-    padding:5px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between; 
-}
-
-footer .footer-link {
-    margin-top: auto; 
-}
-
-footer .footer-link a {
-    color: black; 
-    text-decoration: none;   
-}
 
 .hero {
     position: relative;
@@ -201,10 +185,44 @@ footer .footer-link a {
     font-size: 1.2rem; 
     text-decoration: none;
     border: none;
-    border-radius: 5px;
-    
+    border-radius: 5px;   
 }
 
 .button:hover {
     background-color: var(--accent2-color); 
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: var(--accent1-color);
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0; 
+    font-size: 18px;
+    color:black;
+}
+
+footer p a {
+    text-decoration: none; 
+    color:black;
+}
+
+.sociallinks {
+    order: -1; 
+}
+
+.sociallinks a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sociallinks img {
+    width: 60px;
+    height: auto;
+    background-color: #0fa3b1;
 }

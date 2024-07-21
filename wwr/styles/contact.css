@@ -94,24 +94,37 @@ button[type="submit"] {
     font-size: 16px;
 }
 
-footer{
-    background-color:var(--accent1-color); 
-    padding:5px;
-    margin-top: 20px;
+footer {
     display: flex;
     justify-content: space-between; 
+    align-items: center; 
+    background-color: var(--accent1-color);
+    padding: 25px;
+    margin-top: 30px;
 }
 
-footer .footer-link {
-    margin-top: auto; 
+footer p {
+    margin: 0; 
+    font-size: 18px;
+    color:black;
 }
 
-
-footer .footer-link a {
-    color: black; 
+footer p a {
     text-decoration: none; 
-   
+    color:black;
 }
 
+.sociallinks {
+    order: -1; 
+}
 
-  
+.sociallinks a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sociallinks img {
+    width: 60px;
+    height: auto;
+    background-color: #0fa3b1;
+}
