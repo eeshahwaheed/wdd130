@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --primary-color: #141414; /* Dark grey */
-    --secondary-color: #BA5B4F; /* Reddish */
-    --accent1-color: #BA5B4F; /* Reddish */
-    --accent2-color: #1C6E8C; /* Dark aqua */
-    --accent3-color: #1C6E8C; /* Dark aqua */
-    --heading-font: 'Poppins', serif;
+    --primary-color:white; 
+     --secondary-color:black; 
+     --accent1-color: #0fa3b1; 
+     --accent2-color :#b5e2fa; 
+     --accent3-color:#f7a072; 
+     --heading-font: 'Poppins', serif;
     --paragraph-font:'Playwrite Nigeria Modern', serif;
-    --nav-background-color: #FEAD34;
-}
+    --nav-background-color:#eddea4;
+    }
 
 * {
     box-sizing: border-box;
@@ -18,23 +18,21 @@
 body {
     margin: 0 auto; 
     max-width: 1200px; 
-    padding: 0 20px;
+    padding: 0 30px;
     font-family: var(--paragraph-font);
 }
 
-.header {
+header{
     display: grid;
-    grid-template-columns:1fr auto minmax(0, 1fr) ;
-    align-items: center; 
-    padding: 10px 20px;
-    background-color:  rgb(91, 146, 173);
-    margin-bottom:30px ;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color:var(--accent1-color);
+    margin-left: 0px;
 }
 
 .logo {
     max-width: 100%;
-    height: auto;
-    margin-left: 50px;
+    height: auto;   
 }
 
 nav {
@@ -50,56 +48,6 @@ nav a {
     font-size: 1.2rem;
     font-weight: 700;
     color: white; 
-}
-.hero {
-    position: relative;
-   height: 400px;
-}
-
-.hero img{
-    width: 100%;
-   
-    height: 100%;
-    
-}
-
-.hero-content {
-    position: absolute;
-    top: 2%;
-    text-align: center;
-    color:white;
-    padding: 0 20px;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    font-family: var(--heading-font);
-}
-
-.hero-content p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-}
-
-.cta {
-    background-color: var(--accent3-color);
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.cta h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    font-family: var(--heading-font);
-}
-
-.cta p {
-    font-size: 1.2rem;
-    line-height: 1.6;
 }
 
 .features {
@@ -117,7 +65,9 @@ nav a {
 }
 
 .feature img {
-    max-width: 100%;
+    width: 500px; 
+    height: 400px; 
+    object-fit: cover; 
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -156,9 +106,7 @@ nav a {
     flex-wrap: wrap;
 }
 
-.newsletter input[type="text"],
-.newsletter input[type="email"],
-.newsletter button {
+.newsletter input[type="text"],.newsletter input[type="email"],.newsletter button {
     margin: 5px;
     padding: 10px;
     font-size: 1rem;
@@ -166,8 +114,7 @@ nav a {
     border-radius: 5px;
 }
 
-.newsletter input[type="text"],
-.newsletter input[type="email"] {
+.newsletter input[type="text"],.newsletter input[type="email"] {
     flex: 1 1 300px;
     max-width: 300px;
 }
@@ -195,9 +142,69 @@ footer .footer-link {
     margin-top: auto; 
 }
 
-
 footer .footer-link a {
     color: black; 
-    text-decoration: none; 
-   
+    text-decoration: none;   
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height:400px ;
+    margin-top: 50px;
+}
+
+.hero-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 90%;
+    object-position: center;  
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;  
+}
+
+.hero-content {
+    position: relative;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 3rem; 
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accent2-color); 
+    color: black;
+    font-size: 1.2rem; 
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.button:hover {
+    background-color: var(--accent2-color); 
 }
